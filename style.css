@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.title {
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.input {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.output-right {
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.output-left {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer {
+  /*  */
+}
+
+.grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "dogs dogs dogs dogs dogs dogs dogs dogs dogs"
+    "dogs dogs dogs dogs dogs dogs dogs dogs dogs"
+    "dogs dogs dogs dogs dogs dogs dogs dogs dogs"
+    "dogs dogs dogs dogs dogs dogs dogs dogs dogs"
+    "dogs dogs dogs dogs dogs dogs dogs dogs dogs"
+    "dogs dogs dogs dogs dogs dogs dogs dogs dogs"
+    ".  output-left output-left output-left output-right  output-right output-right output-right ."
+    ".  output-left output-left output-left output-right  output-right output-right output-right ."
+    " . footer footer footer footer footer footer footer .";
+}
+
+.kittykat {
+  border-radius: 100%;
+  border: 2px pink solid;
+  height: 14vw;
+  width: 14vw;
+}
+
+.grid div {
+  border: 1px solid black;
+  display: flex;
+}
+
+.title {
+  grid-area: dogs;
+  background-color: pink;
+}
+
+.input {
+  grid-area: input;
+  background-color: lightblue;
+}
+
+.output-right {
+  grid-area: output-right;
+  background-color: lightgreen;
+}
+
+.output-left {
+  grid-area: output-left;
+  background-color: orange;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: lightyellow;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-button {
+  margin-left: .5vw;
+}
