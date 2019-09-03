@@ -1,5 +1,7 @@
 Instructions:
 
+I made this to help others get flexbox/grid
+
 -install live-server globally if you have not done so already by typing:
 npm i live-server -g
 
